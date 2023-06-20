@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+.feature-text {
+  height: 310px;
+  background-image: url(../images/index/TIMETABLE.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+.feature-text h1 {
+  font-family: 'Monteserrat',sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+.feature-about h2 {
+  font-size: 40px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 150%;
+}
+
+.lead {
+  max-width: 1200px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.explain {
+  margin: 60px auto;
+  text-align: center;
+  color: hsl(0, 0%, 55%);
+  line-height: 150%;
+  color: #1f3134;
+  max-width: 80%;
+}
+
+.lead img {
+  padding: 10px;
+}
+.performer {
+  color: #1f3134;
+}
+.performers {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+}
+
+.performers .performer {
+  background: #d1ebef;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 4px gray;
+}
+.performers .introduce {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: left;
+}
+.performers .performers-name {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.timetable-image {
+  max-width: 80%;
+}
+.midashi {
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.introduce {
+  line-height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .performers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .midashi {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+  .performers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .en-el {
+    font-size: 13px;
+  }
+  .midashi {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 374px) {
+  html {
+    font-size: 14px;
+  }
+  .performers {
+    grid-template-columns: 1fr;
+  }
+  .midashi {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}

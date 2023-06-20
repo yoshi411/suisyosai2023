@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+.title {
+  height: 310px;
+  background-image: url(../images/index/出展団体（仮）.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+.title h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+.title h2 {
+  font-size: 25px;
+  margin-top: 15px;
+}
+.explain {
+  margin: 60px auto;
+  text-align: center;
+  color: hsl(0, 0%, 55%);
+  line-height: 150%;
+}
+.explain img {
+  max-width: 10%;
+  display: flex;
+}
+.floor {
+  color: #1f3134;
+}
+.icon {
+  display: block;
+  height: auto;
+  padding: 10px;
+}
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+.filters {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 10px;
+}
+.filters * {
+  display: inline-block;
+}
+.figure img {
+  padding-top: 20px;
+  
+}
+.filters label {
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.25rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #1f3134;
+}
+.filters label:hover {
+  background: #cc7eb1;
+  color: #fff;
+  border-radius: 10px 10px 10px 10px;
+}
+.targets {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+}
+
+.targets .target {
+  background: #f1f1f1;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.product {
+  background: #f1f1f1;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.targets .target-title {
+  font-size: 15px;
+  margin: 1rem 0 0.25rem 0.25rem;
+  color: #595959;
+  line-height: 120%;
+}
+
+.target .presenter {
+  font-size: 10px;
+  margin: 0 0 0.5rem 0.5rem;
+  color: #595959;
+  line-height: 120%;
+}
+
+.targets figcaption {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  color: #8c8c8c;
+  line-height: 150%;
+}
+
+.targets .target-categories {
+  font-size: 12px;
+}
+
+.targets .target-categories * {
+  display: inline-block;
+}
+
+.targets .target-categories li {
+  margin-bottom: 0.2rem;
+}
+
+.targets .target-categories a {
+  padding: 2px 10px;
+  transition: all 0.1s;
+  color: #aa4c8f;
+  line-height: 150%;
+}
+
+.map-number {
+  margin-left: 5px;
+  font-size: 1.0rem;
+  color: #aa4c8f;
+}
+
+.混雑度 img {
+  max-height: 100px;
+  max-width: 100px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+.map-select-area {
+  margin-top: 50px;
+  align-items: center;
+}
+.floor {
+  background-color:#a2d7dd;
+  display: inline-block;
+  min-width: 200px;
+  line-height: 50px;
+  border-radius: 25px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+.floor:hover {
+  background-color: #abced8;
+}
+.footer {
+  margin-top: 100px;
+}
+.floor-map-detail {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 20px;
+}
+.map-floor-image {
+  display: block;
+  height: auto;
+  padding: 10px;
+}
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.map-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+.map-filters {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 10px;
+}
+.map-filters * {
+  display: inline-block;
+}
+.figure img {
+  padding-top: 20px;
+  
+}
+.map-filters label {
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.25rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #1f3134;
+}
+.map-filters label:hover {
+  background: #cc7eb1;
+  color: #fff;
+  border-radius: 10px 10px 10px 10px;
+}
+.floor-map-floor {
+  border: 1px double #97a791;
+  border-radius: 5px;
+}
+.content {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+/* 触るな危険 */
+[value="All"]:checked~.filters [for="All"],
+[value="cat-a"]:checked~.filters [for="cat-a"],
+[value="cat-b"]:checked~.filters [for="cat-b"],
+[value="cat-c"]:checked~.filters [for="cat-c"],
+[value="cat-d"]:checked~.filters [for="cat-d"],
+[value="cat-e"]:checked~.filters [for="cat-e"],
+[value="cat-f"]:checked~.filters [for="cat-f"] {
+  background: #cc7eb1;
+  color: #fff;
+  border-radius: 10px 10px 10px 10px;
+}
+
+[value="All"]:checked~.targets [data-category] {
+  display: block;
+}
+
+[value="cat-a"]:checked~.targets .target:not([data-category~="cat-a"]),
+[value="cat-b"]:checked~.targets .target:not([data-category~="cat-b"]),
+[value="cat-c"]:checked~.targets .target:not([data-category~="cat-c"]),
+[value="cat-d"]:checked~.targets .target:not([data-category~="cat-d"]),
+[value="cat-e"]:checked~.targets .target:not([data-category~="cat-e"]),
+[value="cat-f"]:checked~.targets .target:not([data-category~="cat-f"]) {
+  display: none;
+}
+
+/* 触るな危険 */
+[value="whole"]:checked~.map-filters [for="whole"],
+[value="1st"]:checked~.map-filters [for="1st"],
+[value="2nd"]:checked~.map-filters [for="2nd"],
+[value="3rd"]:checked~.map-filters [for="3rd"],
+[value="4th"]:checked~.map-filters [for="4th"] {
+  background: #cc7eb1;
+  color: #fff;
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+[value="whole"]:checked~.floor-map-detail .floor-map-floor:not([data-category~="whole"]),
+[value="1st"]:checked~.floor-map-detail .floor-map-floor:not([data-category~="1st"]),
+[value="2nd"]:checked~.floor-map-detail .floor-map-floor:not([data-category~="2nd"]),
+[value="3rd"]:checked~.floor-map-detail .floor-map-floor:not([data-category~="3rd"]),
+[value="4th"]:checked~.floor-map-detail .floor-map-floor:not([data-category~="4th"]) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .targets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

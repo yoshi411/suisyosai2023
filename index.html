@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>INDEX | SUISYOSAI official website</title>
+  <meta name="description" content="翠翔祭の概要を掲載しています。">
+  <meta name="viewpoint" content="width=device-width">
+  <script src="./js/toggle-menu.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/countdown.js"></script>
+  <link href="./css/common.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=+New&display=swap" rel="stylesheet">
+  <script>
+    function CountdownTimer(elm,tl,mes){
+    this.initialize.apply(this,arguments);
+    }
+    CountdownTimer.prototype={
+    initialize:function(elm,tl,mes) {
+    this.elem = document.getElementById(elm);
+    this.tl = tl;
+    this.mes = mes;
+    },countDown:function(){
+    var timer='';
+    var today=new Date();
+    var day=Math.floor((this.tl-today)/(24*60*60*1000));
+    var hour=Math.floor(((this.tl-today)%(24*60*60*1000))/(60*60*1000));
+    var min=Math.floor(((this.tl-today)%(24*60*60*1000))/(60*1000))%60;
+    var sec=Math.floor(((this.tl-today)%(24*60*60*1000))/1000)%60%60;
+    var milli=Math.floor(((this.tl-today)%(24*60*60*1000))/10)%100;
+    var me=this;
+    if( ( this.tl - today ) > 0 ){
+    if (day) timer += '<span class="day">'+day+'日と</span>';
+    if (hour) timer += '<span class="hour">'+hour+'時間</span>';
+    timer += '<span class="min">'+this.addZero(min)+'分</span><span class="sec">'+this.addZero(sec)+'秒</span><span class="milli">'+this.addZero(milli)+'</span>';
+    this.elem.innerHTML = timer;
+    tid = setTimeout( function(){me.countDown();},10 );
+    }else{
+    this.elem.innerHTML = this.mes;
+    return;
+    }
+    },addZero:function(num){ return ('0'+num).slice(-2); }
+    }
+    function CDT(){
+    var text = '翠翔祭開始まで :';
+    var tl = new Date('2023/06/24 09:20:00');
+    var timer = new CountdownTimer('CDT',tl,'翠翔祭開幕！');
+    timer.countDown();
+    target = document.getElementById("text");
+    target.innerHTML = text;
+    }
+    window.onload=function(){
+    CDT();
+    }
+    </script>
+</head>
+
+<body>
+
+  <!--headerここから-->
+  <header class="header">
+    <div class="header-inner">
+      <a class="header-logo" href="./index.html">
+        <img src="../images/各種アイコン/suisyosai2023-logo(仮).png" alt="翠翔祭2023">
+      </a>
+      <button class="toggle-menu-button"></button>
+      <div class="header-site-menu">
+        <nav class="site-menu">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./map-groups.html">MAP&GROUPS</a></li>
+            <li><a href="./food.html">FOOD</a></li>
+            <li><a href="./timetable.html">TIMETABLE</a></li>
+            <li><a class="font-font" href="./about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--headerここまで-->
+
+  <!--mainここから-->
+  <main class="main">
+    <div class="first-view">
+      <div class="first-view-text">
+        <h1>Hack</h1>
+        <h3>SUISYOSAI 2023</h3>
+      </div>
+    </div>
+    <div class="lead">
+      <div class="timer" id="jct_sample">
+        <span id="text"></span><span id="CDT"></span>
+        </div>
+      <div class="theme">
+        <p>コロナ禍を乗り越え、様々な制限が緩和、撤廃されました。<br>全員で新しい翠翔祭を盛り上げていきましょう！
+        </p>
+      </div>
+      <div class="GP">
+        <h2 class="GPD" data-en="GRAND PRIX">翠翔祭グランプリ</h2>
+        <h3>【OVERVIEW】</h3>
+        <p>「総合部門」「ステージ部門」の2部門でグランプリを決めます。<br>生徒と保護者の皆さんに投票を行ってもらい、各部門で最も票を得た団体がグランプリ獲得です。<br>グランプリ受賞団体にはトロフィーや賞状が贈呈されます。</p>
+        <h3>【HOW TO VOTE】</h3>
+        <p>下記のリンクや校内随所に掲示されているQRコードから翠翔祭開催期間中に投票してください。<br>1人1回、各部門1団体投票してください。ただし、生徒は自分が所属する団体には投票できません。</p>
+        <div class="form-button-area">
+          <a class="form-button" href="https://suishousai2022.github.io/website/index.html">投票フォーム</a>
+          <p>現在、2022年度翠翔祭のホームページにリンクしています。</p>
+        </div>
+      </div>
+      <div class="NEWS">
+        <h2 class="NEWSD" data-en="NEWS">お知らせ</h2>
+        <div class="news-detail">
+          <div class="announce-detail">
+            <div class="article">
+              <h3>お知らせ表示テスト１</h3>
+              <p class="publication-date">
+                <time datetime="2023-02-26">2023.02.26</time>
+              </p>
+              <h4>お知らせ欄の表示をテストしています。</h4>
+            </div>
+            <div class="article">
+              <h3>お知らせ表示テスト２</h3>
+              <p class="publication-date">
+                <time datetime="2023-02-26">2023.02.26</time>
+              </p>
+              <h4>お知らせ欄の表示をテストしています。</h4>
+            </div>
+            <div class="article">
+              <h3>お知らせ表示テスト３</h3>
+              <p class="publication-date">
+                <time datetime="2023-02-26">2023.02.26</time>
+              </p>
+              <h4>お知らせ欄の表示をテストしています。</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="AN">
+        <h2 class="AND" data-en="PRECAUTIONS">注意事項</h2>
+        <div class="detail">
+          <article id="part1">
+            <p class="text-content">・調理食品販売及び物品販売は全て電子決済となります。現金は利用できませんのでご注意下さい。利用できるサービスは以下の通りです。</p>
+            <a><img class="usable-service" src="./images/その他画像/電子決済.jpg"></a>
+            <p class="sub-text-content">チャージは出来ません。十分にチャージしてからご来場下さい。</p>
+          </article>
+          <article id="part2">
+            <p class="text-content">・本校は一足制です。上履きやスリッパは必要ありません。</p>
+          </article>
+          <article id="part3">
+            <p class="text-content">・本校は敷地内禁煙です。喫煙はお控えください。</p>
+          </article>
+          <article id="part4">
+            <p class="text-content">・体育館及び野外ステージは全面撮影禁止です。ご注意ください。</p>
+          </article>
+          <article id="part5">
+            <p class="text-content">・質問や落とし物等ございましたら2棟1階総合案内所までお越しください。</p>
+          </article>
+        </div>
+      </div>
+      <div class="access">
+        <h2 class="AD" data-en="ACCESS">アクセス</h2>
+        <div class="access-route">
+          <h3>徒歩</h3>
+          <li class="access-detail">横浜駅より徒歩20分</li>
+          <li class="access-detail">横浜市営地下鉄ブルーライン「三ツ沢下町駅」より徒歩12分</li>
+          <h3>バス</h3>
+          <li class="access-detail">「横浜駅西口」６番乗り場から市営バス３４系統「沢渡循環」で「翠嵐高校前」停留所まで　約15分</li>
+          <div class="access-announce">
+            <h4>*駐車場はありません。徒歩またはバスでお越しください。</h4>
+            <h4>*三ッ沢下町駅からは急な上り坂が続いています。ご注意ください。</h4>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10617.846325703522!2d139.61010265174872!3d35.474518883732166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c00a49b3861%3A0xf105a9d61ccd44fc!2z56We5aWI5bed55yM56uL5qiq5rWc57-g5bWQ6auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1677380804375!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--mainここまで-->
+
+  <!--footerここから-->
+  <footer class="footer">
+    <nav class="site-menu">
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./map-groups.html">MAP&GROUPS</a></li>
+        <li><a href="./food.html">FOOD</a></li>
+        <li><a href="./timetable.html">TIMETABLE</a></li>
+        <li><a class="font-font" href="./about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <a class="footer-logo" href="./index.html">
+      <img src="./images/各種アイコン/suisyosai2023-logo(仮).png" alt="翠翔祭2023">
+    </a>
+    <p class="footer-tel">TEL 045-311-4621</p>
+    <p class="footer-time">1st Day JUN.24th 09:00~15:00<br>2nd Day JUN.25th 09:00~15:00</p>
+    <p class="copyright"><small>&copy;Yokohama Suiran High School All Rights Reserved</small></p>
+  </footer>
+  <!--footerここまで-->
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+.feature-text {
+  height: 310px;
+  background-image: url(../images/index/食販（仮）.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+.feature-text h1 {
+  font-family: 'Monteserrat',sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.feature-about h2 {
+  font-size: 40px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 150%;
+}
+.explain {
+  margin: 14px auto;
+  text-align: center;
+  line-height: 150%;
+  color: #1f3134;
+  max-width: 80%;
+}
+.caution {
+  text-align: center;
+  line-height: 1.5rem;
+  margin: auto;
+  max-width: 80%;
+}
+.exhibitor-group {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.add {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.exhibitor-group h2 {
+  text-align: center;
+}
+.exhibitor-group h3 {
+  margin-left: 10px;
+}
+.guide-area {
+  text-align: center;
+}
+.guide {
+  background-color:#a3d9c0;
+  display: inline-block;
+  min-width: 200px;
+  line-height: 50px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #1f3134;
+}
+.guide:hover {
+  background-color: #abced8;
+}
+.food-group {
+  background: #d7f0bf;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 2px 2px 4px gray;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.menu {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  background: #d7f0bf;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.menu-shuhei {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.menu-item-shuhei {
+  border-radius: 5px;
+  background-color: #eaedf7;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 100px;
+}
+.menu figcaption {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  color: #565656;
+  line-height: 150%;
+}
+.target-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.menu-item {
+  border-radius: 5px;
+  background-color: #eaedf7;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.position {
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
