@@ -82,6 +82,12 @@ input[type="radio"] {
   color: #fff;
   border-radius: 10px 10px 10px 10px;
 }
+.congestion-degree {
+  align-items: center;
+}
+.congestion-degree-image {
+  max-width: 100%;
+}
 .targets {
   display: grid;
   grid-gap: 1.5rem;
