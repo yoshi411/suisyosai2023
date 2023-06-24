@@ -302,4 +302,8 @@ input[type="radio"] {
   .targets {
     grid-template-columns: repeat(2, 1fr);
   }
+  .congestion-degree {
+    font-size: 20px;
+    text-align: center;
+  }
 }
