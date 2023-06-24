@@ -83,10 +83,15 @@ input[type="radio"] {
   border-radius: 10px 10px 10px 10px;
 }
 .congestion-degree {
+  width: 100%;
   align-items: center;
+  text-align: center;
+  font-size: 30px;
 }
 .congestion-degree-image {
-  max-width: 100%;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
 }
 .targets {
   display: grid;
