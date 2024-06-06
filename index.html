@@ -40,7 +40,7 @@
     if( ( this.tl - today ) > 0 ){
     if (day) timer += '<span class="day">'+day+'日と</span>';
     if (hour) timer += '<span class="hour">'+hour+'時間</span>';
-    timer += '<span class="min">'+this.addZero(min)+'分</span><span class="sec">'+this.addZero(sec)+'秒</span><span class="milli">'+this.addZero(milli)+'</span>';
+    timer += '<span class="min">'+this.addZero(min)+'分</span><span class="sec">'+this.addZero(sec)+'秒</span>';
     this.elem.innerHTML = timer;
     tid = setTimeout( function(){me.countDown();},10 );
     }else{
