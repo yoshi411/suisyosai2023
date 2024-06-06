@@ -413,6 +413,27 @@
   .lead p {
     text-align: left;
   }
+  .suisyosai2024 {
+    position: relative;
+    padding-top:0px;
+    padding-bottom: 30px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .suisyosai2024 span {
+    position: relative;
+    z-index: 2;
+  }
+  .suisyosai2024::before {
+    content: attr(data-en);
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(224,66,114,0.2);
+    font-size: 50px;
+    font-style: italic;
+  }
   .GPD {
     position: relative;
     padding-top: 30px;
