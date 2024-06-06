@@ -131,6 +131,24 @@
 	font-size: 80px;
 	font-style: italic;
 }
+.form-button-area-1 {
+  margin-top: 35px;
+}
+.form-button-1 {
+  background-color:#a2d7dd;
+  display: inline-block;
+  min-width: 250px;
+  line-height: 60px;
+  border-radius: 25px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  color: #1f3134;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.form-button-1:hover {
+  background-color: #abced8;
+}
 .GP {
   position: relative;
   padding-top: 50px;
